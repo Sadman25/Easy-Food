@@ -1,0 +1,15 @@
+#about {
+    margin-top: 3%;
+    background-color: #383E44;
+    color: white;
+}
+
+#about h1{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#about li{
+    margin-top: 1%;
+}

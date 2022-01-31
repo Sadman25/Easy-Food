@@ -1,0 +1,31 @@
+{% extends 'base_homepage.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        {% for product in products %}
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="{{product.cover_photo.url}}" alt="">
+
+                <div class="card-body">
+                    <h5 class="card-title" id="namepr{{product.id}}">{{product.product_name}}</h5>
+                    <p class="card-text" >                        
+                        Price: <span id="pricepr{{product.id}}"> {{product.product_price}}</span>Tk<br>
+                    </p>
+
+                    <a href="{% url 'productDetails' product.pk %}" class="btn btn-outline-primary btn-sm">
+                        Product Details
+                    </a>
+                    <span id="divpr{{product.id}}" class="divpr">
+                        <button id="pr{{product.id}}" class="btn btn-primary cart">Add To Cart</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

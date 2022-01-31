@@ -1,0 +1,15 @@
+#product {
+    margin-top: 2%;
+    background-color: #383E44;
+    color: white;
+}
+
+#product h3{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+#review_button{
+    margin-top: 2%;
+}
